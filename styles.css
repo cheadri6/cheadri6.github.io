@@ -71,6 +71,11 @@ h3 {
     padding-left: 50px;
 }
 
+.project-name {
+    font-size: 60px;
+    color: white;
+}
+
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
