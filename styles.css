@@ -3,12 +3,17 @@
 body {
     margin: 0px;
     font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(255, 255, 255);
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 40px;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 
@@ -63,8 +68,27 @@ h3 {
     color: black !important;
 }
 
+.line {
+    display: block;
+    border-top: 1px solid black;
+    width: 100%;
+    opacity: 50%;
+}
+
+.objective {
+    font-size: 46px;
+    font-style: italic;
+    color: grey;
+    padding: 10px;
+    text-align: center;
+}
+
 
 /*Portfolio Styles*/
+
+.content-wrapper {
+    padding: 0px 0px 100px 0px;
+}
 
 .projects-header {
     padding-top: 50px;
@@ -125,6 +149,54 @@ h3 {
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
+}
+
+.gif-container {
+    width: 700px;
+    height: 350px;
+    background-image: url('./images/orbiter-background.png');
+    /* Set a static image as a fallback */
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+.gif-container:hover {
+    background-image: url('./images/86agfh.gif');
+    /* Set the animated GIF */
+}
+
+.socials {
+    color: black;
+    text-align: center;
+}
+
+.github,
+.linkedin {
+    display: inline;
+}
+
+.github img,
+.linkedin img {
+    width: 200px;
+    padding: 0px 20px;
+}
+
+.github a {
+    color: #333;
+    /* Default text color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease;
+    /* Add a smooth transition for the color change */
+}
+
+
+/* Hover state styles */
+
+.github img:hover,
+.linkedin img:hover {
+    background-color: lightgrey;
+    /* Add a background color on hover */
 }
 
 
